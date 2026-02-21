@@ -1,0 +1,58 @@
+title: Senior Fullstack Engineer
+
+introduction: |
+  Senior Fullstack Engineer with over 8 years of experience in web development. Specialized in building scalable applications using **Angular** and **Node.js**. Passionate about software architecture, clean code, and mentoring junior developers. Experienced in leading technical initiatives and modernizing legacy systems.
+
+links:
+  linkedin: https://www.linkedin.com/in/dev-ficticio/
+  github: https://github.com/dev-ficticio
+
+experiences:
+  - id: techcorp
+    company: TechCorp
+    keySkills: Angular, Node.js, NestJS, PostgreSQL, AWS
+    roles:
+      - id: senior-fullstack-engineer
+        title: Senior Fullstack Engineer
+        period: 2022 - Present
+        bullets:
+          - Architected and led the migration of a monolithic AngularJS application to **Angular 16**, resulting in a **40% improvement in page load time**.
+          - Designed and implemented microservices using **NestJS** to decouple complex business logic from the legacy monolith.
+          - Mentored 3 junior developers, conducting code reviews and pair programming sessions to improve team code quality.
+          - Introduced **Unit Testing** coverage (Jest) from 0% to 65% in critical modules.
+
+  - id: websolutions
+    company: WebSolutions
+    keySkills: Angular, Node.js, Express, MongoDB
+    roles:
+      - id: fullstack-developer
+        title: Fullstack Developer (Mid-level to Senior)
+        period: 2019 - 2022
+        bullets:
+          - Built a custom e-commerce dashboard using **Angular** and **NgRx**, handling complex state management for inventory and sales data.
+          - Optimized backend API endpoints in **Node.js**, reducing response times by **30%** for high-traffic endpoints.
+          - Integrated third-party payment gateways (Stripe, PayPal) and shipping providers.
+          - Collaborated with UX/UI designers to implement responsive and accessible interfaces.
+
+  - id: startup-inc
+    company: StartUp Inc
+    keySkills: Angular, HTML, SASS, JavaScript
+    roles:
+      - id: frontend-developer
+        title: Frontend Developer (Junior to Mid-level)
+        period: 2016 - 2019
+        bullets:
+          - Developed reusable UI components using **Angular**, establishing a shared component library used across multiple internal projects.
+          - Implemented real-time features using WebSockets (Socket.io) for collaborative task editing.
+          - Participated in agile ceremonies (Scrum) and contributed to sprint planning and retrospectives.
+
+education:
+  - degree: B.S. in Computer Science
+    institution: Universidade Federal de Tecnologia
+    details: 2014 - 2018
+
+skills:
+  languages: JavaScript, TypeScript, Node.js, Python (Basic)
+  frameworks: Angular (v2+ to v17), NestJS, Express, React (Hooks), Vue.js
+  databases: PostgreSQL, MongoDB
+  devops: Docker, AWS (EC2, S3, RDS), CI/CD (GitHub Actions)

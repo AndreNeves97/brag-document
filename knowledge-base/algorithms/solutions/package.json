@@ -1,0 +1,20 @@
+{
+  "name": "algorithms-training",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "jest --watch",
+    "test:ci": "jest",
+    "type-check": "tsc --noEmit"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^20.0.0",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.6.0"
+  }
+}

@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 11pt;
+  line-height: 1.4;
+  color: #333;
+  background: #fff;
+  padding: 20px;
+
+  --title_1_color: #2c3e50;
+  --less_emphasis_color: #7f8c8d;
+}
+
+.resume {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.name {
+  font-size: 18pt;
+  font-weight: 600;
+  margin-bottom: 8px;
+  margin-top: 0;
+  margin-bottom: 4px;
+  color: var(--title_1_color);
+}
+
+.title {
+  font-size: 12pt;
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-top: 0;
+  color: var(--title_1_color);
+}
+
+.introduction {
+  margin-bottom: 10px;
+  padding-left: 15px;
+  border-left: 3px solid #e0e0e0;
+  font-style: italic;
+  color: #555;
+}
+
+.introduction p {
+  margin-bottom: 8px;
+  margin-top: 0;
+  text-align: justify;
+}
+
+.introduction p:first-child {
+  margin-top: 0;
+}
+
+.introduction p:not(:first-child) {
+  margin-top: 0.5em;
+}
+
+.links {
+  margin-top: 14px;
+}
+
+.link {
+  margin-right: 15px;
+}
+
+.link a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.link a:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 14pt;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--title_1_color);
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 3px;
+}
+
+.company {
+  margin-bottom: 15px;
+}
+
+.company-name {
+  font-size: 13pt;
+  font-weight: 600;
+  margin-bottom: 0px;
+  color: var(--color_title_color);
+}
+
+.company-key-skills {
+  font-size: 10pt;
+  color: var(--less_emphasis_color);
+  margin-bottom: 8px;
+  margin-left: 10px;
+  margin-top: 0;
+}
+
+.role {
+  margin-bottom: 15px;
+  margin-left: 10px;
+}
+
+.role-title {
+  font-size: 12pt;
+  font-weight: 600;
+  margin-bottom: 0px;
+  margin-top: 0;
+  color: var(--title_1_color);
+}
+
+.role-period {
+  font-size: 10pt;
+  color: var(--less_emphasis_color);
+  margin-bottom: 5px;
+}
+
+.role-note {
+  font-style: italic;
+}
+
+.role-bullets {
+  margin-left: 20px;
+}
+
+.role-bullets li {
+  margin-bottom: 5px;
+  text-align: justify;
+}
+
+.key-skills {
+  font-size: 10pt;
+  color: #555;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.education-item {
+  margin-bottom: 15px;
+}
+
+.education-item h3 {
+  font-size: 12pt;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--title_1_color);
+}
+
+.institution {
+  font-size: 11pt;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.details {
+  font-size: 10pt;
+  color: #666;
+  margin-top: 5px;
+}
+
+.skills p {
+  margin-bottom: 5px;
+  font-size: 10pt;
+}
+
+.skills strong {
+  color: var(--title_1_color);
+  font-weight: 600;
+}
+
+/* Print styles */
+@media print {
+  body {
+    padding: 0;
+  }
+  
+  .resume {
+    max-width: 100%;
+  }
+  
+  a {
+    color: #333 !important;
+    text-decoration: none;
+  }
+}
+
+@page {
+  margin-inline: 0.25in;
+  margin-block: 0.20in;
+}
+

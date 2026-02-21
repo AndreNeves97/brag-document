@@ -1,0 +1,30 @@
+# Customization for Topocart - Desenvolvedor(a) Frontend (Angular & React)
+# Command: cd .cursor/skills/generate-custom-resumes/resume-generator && npm install && node src/index.js --custom hiring-processes/in-progress/topocart-desenvolvedor-frontend-angular-react/resume.yaml --output hiring-processes/in-progress/topocart-desenvolvedor-frontend-angular-react/resume.pdf
+
+title: Senior Frontend Engineer (Angular & React)
+
+introduction: |
+  Senior Frontend Engineer with over 8 years of experience, specializing in **Angular** and **React**. Proven track record in modernizing legacy systems, architecting scalable frontends, and leading technical initiatives. Expert in building high-performance web applications with a focus on clean code and developer experience.
+
+experiences:
+  - id: techcorp
+    roles:
+      - id: senior-fullstack-engineer
+        title: Senior Frontend Engineer
+        bullets:
+          - Architected and led the migration of a monolithic AngularJS application to **Angular 16**, resulting in a **40% improvement in page load time**.
+          - Designed and implemented frontend architectures using **Angular** and **React**, ensuring high performance and maintainability.
+          - Mentored 3 junior developers, focusing on frontend best practices and code quality.
+
+  - id: websolutions
+    roles:
+      - id: fullstack-developer
+        title: Frontend Developer (Angular & React)
+        bullets:
+          - Built a custom e-commerce dashboard using **Angular** and **NgRx**, handling complex state management for inventory and sales data.
+          - Developed and maintained features using **React**, ensuring cross-framework consistency and performance.
+          - Collaborated with UX/UI designers to implement responsive and accessible interfaces across different frameworks.
+
+skills:
+  languages: JavaScript, TypeScript, Node.js
+  frameworks: Angular (v2+ to v17), React (Hooks, Context API), NestJS, Express

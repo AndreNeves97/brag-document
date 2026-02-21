@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+  <style>
+    {{{css}}}
+  </style>
+</head>
+<body>
+  <div class="resume">
+    <header class="header">
+      <h1 class="name">
+        [Your name]
+        {{#if showContacts}} ([contact info]){{/if}}
+      </h1>
+      <h2 class="title">{{title}}</h2>
+      <blockquote class="introduction">
+        {{#each (splitLines introduction)}}
+          <p>{{this}}</p>
+        {{/each}}
+      </blockquote>
+      <div class="links">
+        {{#if links.linkedin}}
+        <span class="link">🌐 <a href="{{links.linkedin}}">Linkedin</a></span>
+        {{/if}}
+        {{#if links.github}}
+        <span class="link">💻 <a href="{{links.github}}">GitHub</a></span>
+        {{/if}}
+      </div>
+    </header>
+
+    <section class="experience">
+      <h2>▶ Experience</h2>
+      {{#each experiences}}
+      <div class="company">
+        <h3 class="company-name">{{company}}</h3>
+        {{#if keySkills}}
+        <p class="company-key-skills"><em>Key skills: {{keySkills}}</em></p>
+        {{/if}}
+        {{#each roles}}
+        <div class="role">
+          <h4 class="role-title">{{title}}</h4>
+          <div class="role-period">
+            {{period}}
+            {{#if note}}
+            <span class="role-note">({{note}})</span>
+            {{/if}}
+          </div>
+          <ul class="role-bullets">
+            {{#each bullets}}
+            <li>{{this}}</li>
+            {{/each}}
+          </ul>
+          {{#if keySkills}}
+          <p class="key-skills"><em>Key skills: {{keySkills}}</em></p>
+          {{/if}}
+        </div>
+        {{/each}}
+      </div>
+      {{/each}}
+    </section>
+
+    <section class="education">
+      <h2>▶ Education</h2>
+      {{#each education}}
+      <div class="education-item">
+        <h3>{{degree}}</h3>
+        <p class="institution"><em>{{institution}}</em></p>
+        {{#if details}}
+        <p class="details">{{details}}</p>
+        {{/if}}
+      </div>
+      {{/each}}
+    </section>
+
+    <section class="skills">
+      <h2>▶ Skills</h2>
+      {{#if skills.languages}}
+      <p><strong>Languages:</strong> {{skills.languages}}</p>
+      {{/if}}
+      {{#if skills.databases}}
+      <p><strong>Databases:</strong> {{skills.databases}}</p>
+      {{/if}}
+      {{#if skills.frontend}}
+      <p><strong>Frontend:</strong> {{skills.frontend}}</p>
+      {{/if}}
+      {{#if skills.backend}}
+      <p><strong>Backend:</strong> {{skills.backend}}</p>
+      {{/if}}
+      {{#if skills.architecture}}
+      <p><strong>Architecture:</strong> {{skills.architecture}}</p>
+      {{/if}}
+      {{#if skills.devops}}
+      <p><strong>DevOps:</strong> {{skills.devops}}</p>
+      {{/if}}
+      {{#if skills.systemDesign}}
+      <p><strong>System Design:</strong> {{skills.systemDesign}}</p>
+      {{/if}}
+      {{#if skills.softSkills}}
+      <p><strong>Soft Skills:</strong> {{skills.softSkills}}</p>
+      {{/if}}
+    </section>
+  </div>
+</body>
+</html>
+

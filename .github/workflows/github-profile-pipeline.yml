@@ -1,0 +1,42 @@
+name: Github Profile Pipeline
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+    - main
+    paths:
+    - 'resumes/github-presentation.md'
+    - 'resumes/resume-2025.pdf'
+
+env:
+    REPOSITORY: your-username/your-repo-name
+
+jobs:
+  github-profile:
+    name: Github Profile Job
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout source code
+      uses: actions/checkout@v4
+      with:
+        path: './source'
+
+    - name: Checkout github profile code
+      uses: actions/checkout@v4
+      with:
+        repository: your-username/your-profile-repo
+        path: './github-profile'
+        token: ${{ secrets.PAT }}
+
+    - name: Copy file
+      run: |
+          cd ./github-profile
+          cp ../source/resumes/github-presentation.md ./README.md
+          cp ../source/resumes/resume-2025.pdf ./resume.pdf
+          git config user.name "Your Name"
+          git config user.email "your-email@example.com"
+          git add ./README.md ./resume.pdf
+          git commit -m "Update github profile (README.md) / resume.pdf"
+          git push

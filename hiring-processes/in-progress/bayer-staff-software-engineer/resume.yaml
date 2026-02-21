@@ -1,0 +1,35 @@
+title: Staff Software Engineer - Full Stack
+
+introduction: |
+  Senior Fullstack Engineer com mais de 8 anos de experiência, especializado em arquiteturas escaláveis com **Angular** e **Node.js**. Expertise comprovada na liderança de migrações críticas, modernização de sistemas legados e implementação de culturas de testes (Jest/Cypress). Fluente em inglês com sólida experiência em colaboração global e mentoria técnica.
+
+experiences:
+  - id: techcorp
+    roles:
+      - id: senior-fullstack-engineer
+        bullets:
+          - Arquitetei e liderei a migração estratégica de um monolito AngularJS para **Angular 16**, resultando em uma melhoria de **40% no tempo de carregamento**.
+          - Desenvolvi microserviços escaláveis utilizando **NestJS** e **Node.js**, desacoplando lógicas de negócio complexas.
+          - Implementei uma cultura de qualidade, elevando a cobertura de testes unitários (**Jest**) de 0% para 65% em módulos críticos.
+          - Mentorei desenvolvedores junior e pleno, estabelecendo padrões de code review e pair programming.
+
+  - id: websolutions
+    roles:
+      - id: fullstack-developer
+        bullets:
+          - Otimizei endpoints de API em **Node.js**, reduzindo o tempo de resposta em **30%** para fluxos de alto tráfego.
+          - Desenvolvi dashboards complexos com **Angular** e **NgRx** para gestão de inventário e vendas em tempo real.
+          - Colaborei diretamente com times de UX/UI para garantir acessibilidade e performance em SPAs de grande escala.
+
+  - id: startup-inc
+    roles:
+      - id: frontend-developer
+        bullets:
+          - Iniciei e desenvolvi um Design System interno com **Angular**, reduzindo bugs de UI em **50%**.
+          - Implementei funcionalidades em tempo real utilizando WebSockets para edição colaborativa.
+
+skills:
+  languages: JavaScript (ES6+), TypeScript, Node.js, HTML5, CSS3/SASS
+  frameworks: Angular (Expert), NestJS, Express, React (Familiar), RxJS, NgRx
+  testing: Jest, Cypress, TDD
+  tools: Docker, AWS, Git, CI/CD, GraphQL

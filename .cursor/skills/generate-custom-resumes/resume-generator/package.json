@@ -1,0 +1,26 @@
+{
+  "name": "resume-generator",
+  "version": "1.0.0",
+  "description": "Generate customized PDF resumes from YAML source files",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "generate": "node src/index.js",
+    "test": "node src/index.js --help"
+  },
+  "keywords": [
+    "resume",
+    "pdf",
+    "generator",
+    "yaml"
+  ],
+  "author": "André Neves",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^11.2.0",
+    "handlebars": "^4.7.8",
+    "js-yaml": "^4.1.0",
+    "puppeteer": "^24.31.0",
+    "puppeteer-core": "^24.31.0"
+  }
+}
